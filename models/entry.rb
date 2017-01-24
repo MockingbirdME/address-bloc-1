@@ -1,3 +1,6 @@
+require 'rubygems'
+require 'bundler/setup'
+
 require 'bloc_record/base'
 
 class Entry < BlocRecord::Base
