@@ -22,3 +22,12 @@ require 'sqlite3'
        FOREIGN KEY (address_book_id) REFERENCES address_book(id)
      );
    SQL
+
+db.execute <<-SQL
+    CREATE TABLE comment (
+      id INTEGER PRIMARY KEY,
+      entry_id INTEGER,
+      body VARCHAR(300),
+      FOREIGN KEY (entry_id) REFERENCES entry(id)
+    );
+  SQL

@@ -9,4 +9,4 @@ require 'bloc_record'
 menu = MenuController.new
 system "clear"
 puts "Welcome to AddressBloc!"
-menu.main_menu
+# menu.main_menu

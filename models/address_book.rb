@@ -2,6 +2,7 @@ require 'rubygems'
 require 'bundler/setup'
 
 require_relative 'entry'
+require_relative 'comment'
 require "csv"
 require 'bloc_record/base'
 
